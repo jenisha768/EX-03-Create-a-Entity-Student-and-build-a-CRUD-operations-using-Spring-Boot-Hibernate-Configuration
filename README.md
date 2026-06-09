@@ -1,5 +1,6 @@
 # EXp_03_-Entity-Student-and-build-a-CRUD-operations-using-Spring-Boot-Hibernate-Configuration
-
+## NAME : JENISHA TEENA ROSE F
+## REGISTER NUMBER : 2305001010
 ## AIM:
 To develop a Spring Boot application that performs CRUD (Create, Read, Update, Delete) operations on a Student entity using Spring Data JPA (Hibernate).
 
@@ -38,7 +39,7 @@ PUT /students/{id} → Update student
 
 DELETE /students/{id} → Delete student
 
-##PROGRAM CODE
+## PROGRAM CODE
 
 ### pom.xml
 <dependencies>
@@ -61,8 +62,8 @@ DELETE /students/{id} → Delete student
         <scope>runtime</scope>
     </dependency>
 </dependencies>
- ### application.properties
 
+### application.properties
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.datasource.driverClassName=org.h2.Driver
 spring.datasource.username=sa
@@ -70,6 +71,7 @@ spring.datasource.password=
 spring.jpa.hibernate.ddl-auto=update
 spring.h2.console.enabled=true
 ### Student.java
+
 package com.example.demo.model;
 import jakarta.persistence.*;
 @Entity
@@ -165,3 +167,13 @@ public class DemoApplication {
         SpringApplication.run(DemoApplication.class, args);
     }
 }
+
+### OUTPUT :
+
+<img width="815" height="443" alt="image" src="https://github.com/user-attachments/assets/f741ebd9-ef7a-4de6-be6a-aa656bf19cbd" />
+
+<img width="805" height="418" alt="image" src="https://github.com/user-attachments/assets/080241d7-4919-4f57-8c67-eb6cd8bb6dcf" />
+
+### RESULT :
+
+Thus,the Spring Boot application that performs CRUD (Create, Read, Update, Delete) operations on a Student entity using Spring Data JPA (Hibernate) was implemented and executed successfully.
